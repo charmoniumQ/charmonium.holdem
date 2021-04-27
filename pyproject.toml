@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "charmonium.holdem"
+version = "0.0.0"
+description = "Equity calculation for Texas Hold 'Em"
+authors = ["Samuel Grayson <sam+dev@samgrayson.me>"]
+license = "MIT"
+readme = 'README.rst'
+repository = "https://github.com/charmoniumQ/charmonium.holdem.git"
+packages = [
+    { include = "charmonium" },
+]
+include = ["res/"]
+
+# [tool.poetry.scripts]
+# charmonium.holdem = "charmonium.holdem._cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+scipy = "^1.5.2"
+bluff = "^1.0.2"
+tqdm = "^4.48.2"
+sklearn = "^0.0"
+matplotlib = "^3.3.1"
+graphviz = "^0.14.1"
+
+[tool.poetry.dev-dependencies]
+autoflake = "^1.3.1"
+isort = "^4.3.21"
+black = "^19.10b0"
+pylint = "^2.5.2"
+pylint-exit = "^1.1.0"
+mypy = "^0.780"
+pytest = "^5.4.1"
+codecov = "^2.1.4"
+sphinx = "^3.1.0"
+sphinx-autoapi = "^1.4.0"
+sphinx-autodoc-annotation = "^1.0-1"
+bump2version = "^1.0.0"
+# ipython = "^7.18.1"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
